@@ -1,0 +1,14 @@
+*{background-color: bisque;}
+
+h1 {
+  font-size: 4em;
+}
+ul { margin: 20px;
+  list-style-type: disc;
+  }
+
+ol {
+  padding: 30px;
+  list-style-position: inside;
+  list-style: decimal;
+}
