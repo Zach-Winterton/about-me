@@ -33,11 +33,24 @@ if(answerFour === 'yes' || answerFour === 'y'){
   alert('I do have a pet fish. His name is Squirt');
 }
 
-let answerFive = prompt('Have I ever tried green egss and ham?').toLowerCase();
+let answerFive = prompt('Have I ever tried green eggs and ham?').toLowerCase();
 
 if(answerFive === 'no' || answerFive === 'n'){
   //console.log('answerFive: ' + answerFive);
-  alert('Correct, I have never tried green egss and ham');
+  alert('Correct, I have never tried green eggs and ham');
+}
+
+let answer = 8
+let attempts = 4
+let answer = false
+for (let i = 0; i< attempts; i++) {
+  let questionSix = prompt('guess a number');
+  let numbers = ['5','6','7','8','9','10'](questionSix);
+  if (numbers === answer) {
+    alert('correct')
+    answer = true
+    
+  }
 }
 
 alert('Thank you ' + username + ' for answering those five About Me guessing game questions!');
