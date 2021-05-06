@@ -35,12 +35,15 @@ function a3(){
 }
 a3();
 
-let answerFour = prompt('Do I have a pet fish?').toLowerCase();
+function a4(){
+  let answerFour = prompt('Do I have a pet fish?').toLowerCase();
 
-if(answerFour === 'yes' || answerFour === 'y'){
-  //console.log('I do have a pet fish. His name is Squirt')
-  alert('I do have a pet fish. His name is Squirt');
+  if(answerFour === 'yes' || answerFour === 'y'){
+    //console.log('I do have a pet fish. His name is Squirt')
+    alert('I do have a pet fish. His name is Squirt');
+  }
 }
+a4();
 
 let answerFive = prompt('Have I ever tried green eggs and ham?').toLowerCase();
 
