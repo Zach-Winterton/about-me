@@ -25,12 +25,15 @@ function a2(){
 }
 a2();
 
-let answerThree = prompt('Do I wish I was a Narwhal?').toLowerCase();
+function a3(){
+  let answerThree = prompt('Do I wish I was a Narwhal?').toLowerCase();
 
-if(answerThree === 'yes' || answerThree ==='y'){
-  //console.log('answerThree: ' + answerThree);
-  alert('yes, I want to be a Narwhal');
+  if(answerThree === 'yes' || answerThree ==='y'){
+    //console.log('answerThree: ' + answerThree);
+    alert('yes, I want to be a Narwhal');
+  }
 }
+a3();
 
 let answerFour = prompt('Do I have a pet fish?').toLowerCase();
 
