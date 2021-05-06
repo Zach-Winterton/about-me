@@ -7,10 +7,14 @@ alert('Welcome ' + username + '! Please answer the following five questions yes/
 
 let answerOne = prompt('Do I like peanuts?').toLowerCase();
 
-if(answerOne === 'yes' || answerOne === 'y'){
-  //console.log('you are correct! I like peanuts');
-  alert('you are correct! I like peanuts');
+function a1(){
+  if(answerOne === 'yes' || answerOne === 'y'){
+    //console.log('you are correct! I like peanuts');
+    alert('you are correct! I like peanuts');
+  }
 }
+a1();
+
 
 let answerTwo = prompt('Do I live in South Dakota?').toLowerCase();
 
