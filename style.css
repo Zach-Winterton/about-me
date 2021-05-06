@@ -1,0 +1,25 @@
+*{background-color:green;}
+
+h1 {
+  font-size: 7em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  background-color:red;
+}
+h2 {
+  font-size: 5em;
+  background-color: orange;
+}
+h3{
+  font-size: medium;
+  background-color: steelblue;
+}
+ul { margin: 20px;
+  list-style-type:decimal;
+  }
+
+ol {
+  padding: 30px;
+  list-style-position: inside;
+  list-style: decimal;
+}
