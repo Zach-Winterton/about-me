@@ -5,9 +5,9 @@
 let username = prompt('what is your name?');
 alert('Welcome ' + username + '! Please answer the following five questions yes/no or y/n');
 
-let answerOne = prompt('Do I like peanuts?').toLowerCase();
 
 function a1(){
+  let answerOne = prompt('Do I like peanuts?').toLowerCase();
   if(answerOne === 'yes' || answerOne === 'y'){
     //console.log('you are correct! I like peanuts');
     alert('you are correct! I like peanuts');
@@ -15,13 +15,15 @@ function a1(){
 }
 a1();
 
+function a2(){
+  let answerTwo = prompt('Do I live in South Dakota?').toLowerCase();
 
-let answerTwo = prompt('Do I live in South Dakota?').toLowerCase();
-
-if(answerTwo === 'no' || answerTwo === 'n'){
-  //console.log('Also correct, no one lives there');
-  alert('Also correct, no one lives there');
+  if(answerTwo === 'no' || answerTwo === 'n'){
+    //console.log('Also correct, no one lives there');
+    alert('Also correct, no one lives there');
+  }
 }
+a2();
 
 let answerThree = prompt('Do I wish I was a Narwhal?').toLowerCase();
 
