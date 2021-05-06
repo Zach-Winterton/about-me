@@ -5,40 +5,55 @@
 let username = prompt('what is your name?');
 alert('Welcome ' + username + '! Please answer the following five questions yes/no or y/n');
 
-let answerOne = prompt('Do I like peanuts?').toLowerCase();
 
-if(answerOne === 'yes' || answerOne === 'y'){
-  //console.log('you are correct! I like peanuts');
-  alert('you are correct! I like peanuts');
+function a1(){
+  let answerOne = prompt('Do I like peanuts?').toLowerCase();
+  if(answerOne === 'yes' || answerOne === 'y'){
+    //console.log('you are correct! I like peanuts');
+    alert('you are correct! I like peanuts');
+  }
 }
+a1();
 
-let answerTwo = prompt('Do I live in South Dakota?').toLowerCase();
+function a2(){
+  let answerTwo = prompt('Do I live in South Dakota?').toLowerCase();
 
-if(answerTwo === 'no' || answerTwo === 'n'){
-  //console.log('Also correct, no one lives there');
-  alert('Also correct, no one lives there');
+  if(answerTwo === 'no' || answerTwo === 'n'){
+    //console.log('Also correct, no one lives there');
+    alert('Also correct, no one lives there');
+  }
 }
+a2();
 
-let answerThree = prompt('Do I wish I was a Narwhal?').toLowerCase();
+function a3(){
+  let answerThree = prompt('Do I wish I was a Narwhal?').toLowerCase();
 
-if(answerThree === 'yes' || answerThree ==='y'){
-  //console.log('answerThree: ' + answerThree);
-  alert('yes, I want to be a Narwhal');
+  if(answerThree === 'yes' || answerThree ==='y'){
+    //console.log('answerThree: ' + answerThree);
+    alert('yes, I want to be a Narwhal');
+  }
 }
+a3();
 
-let answerFour = prompt('Do I have a pet fish?').toLowerCase();
+function a4(){
+  let answerFour = prompt('Do I have a pet fish?').toLowerCase();
 
-if(answerFour === 'yes' || answerFour === 'y'){
-  //console.log('I do have a pet fish. His name is Squirt')
-  alert('I do have a pet fish. His name is Squirt');
+  if(answerFour === 'yes' || answerFour === 'y'){
+    //console.log('I do have a pet fish. His name is Squirt')
+    alert('I do have a pet fish. His name is Squirt');
+  }
 }
+a4();
 
-let answerFive = prompt('Have I ever tried green eggs and ham?').toLowerCase();
+function a5(){
+  let answerFive = prompt('Have I ever tried green eggs and ham?').toLowerCase();
 
-if(answerFive === 'no' || answerFive === 'n'){
-  //console.log('answerFive: ' + answerFive);
-  alert('Correct, I have never tried green eggs and ham');
+  if(answerFive === 'no' || answerFive === 'n'){
+    //console.log('answerFive: ' + answerFive);
+    alert('Correct, I have never tried green eggs and ham');
+  }
 }
+a5();
 
 let answer = 8
 let attempts = 4
