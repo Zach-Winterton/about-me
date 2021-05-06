@@ -45,12 +45,15 @@ function a4(){
 }
 a4();
 
-let answerFive = prompt('Have I ever tried green eggs and ham?').toLowerCase();
+function a5(){
+  let answerFive = prompt('Have I ever tried green eggs and ham?').toLowerCase();
 
-if(answerFive === 'no' || answerFive === 'n'){
-  //console.log('answerFive: ' + answerFive);
-  alert('Correct, I have never tried green eggs and ham');
+  if(answerFive === 'no' || answerFive === 'n'){
+    //console.log('answerFive: ' + answerFive);
+    alert('Correct, I have never tried green eggs and ham');
+  }
 }
+a5();
 
 let answer = 8
 let attempts = 4
