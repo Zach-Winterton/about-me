@@ -40,15 +40,15 @@ if(answerFive === 'no' || answerFive === 'n'){
   alert('Correct, I have never tried green eggs and ham');
 }
 
-let answer = 8
-let attempts = 4
-let answer = false
-for (let i = 0; i< attempts; i++) {
-  let questionSix = prompt('guess a number');
-  let numbers = ['5','6','7','8','9','10'](questionSix);
-  if (numbers === answer) {
-    alert('correct')
-    answer = true
+//let answer = 8
+//let attempts = 4
+//let answer = false
+//for (let i = 0; i< attempts; i++) {
+  //let questionSix = prompt('guess a number');
+  //let numbers = ['5','6','7','8','9','10'](questionSix);
+  //if (numbers === answer) {
+    //alert('correct')
+    //answer = true
     
   }
 }
