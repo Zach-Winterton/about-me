@@ -1,56 +1,103 @@
 'use strict';
 
 //console.log('Hello World');
+let score = 0;
 
 let username = prompt('what is your name?');
-alert('Welcome ' + username + '! Please answer the following five questions yes/no or y/n');
+alert('Welcome ' + username + '! Please answer the following  questions');
 
 let answerOne = prompt('Do I like peanuts?').toLowerCase();
 
-if(answerOne === 'yes' || answerOne === 'y'){
+if (answerOne === 'yes' || answerOne === 'y'){
   //console.log('you are correct! I like peanuts');
   alert('you are correct! I like peanuts');
+  score++;
 }
 
 let answerTwo = prompt('Do I live in South Dakota?').toLowerCase();
 
-if(answerTwo === 'no' || answerTwo === 'n'){
+if (answerTwo === 'no' || answerTwo === 'n'){
   //console.log('Also correct, no one lives there');
   alert('Also correct, no one lives there');
+  score++;
 }
 
-let answerThree = prompt('Do I wish I was a Narwhal?').toLowerCase();
+let answerThree = prompt('Did I serve in the military?').toLowerCase();
 
-if(answerThree === 'yes' || answerThree ==='y'){
+if (answerThree === 'yes' || answerThree ==='y'){
   //console.log('answerThree: ' + answerThree);
-  alert('yes, I want to be a Narwhal');
+  alert('yes, 4 years in the Marine Corps');
+  score++;
 }
 
-let answerFour = prompt('Do I have a pet fish?').toLowerCase();
+let answerFour = prompt('Do I have a pet turtle?').toLowerCase();
 
-if(answerFour === 'yes' || answerFour === 'y'){
+if(answerFour === 'no' || answerFour === 'n'){
   //console.log('I do have a pet fish. His name is Squirt')
-  alert('I do have a pet fish. His name is Squirt');
+  alert('Correct, I do have a pet fish though. His name is Squirt');
+  score++;
 }
 
-let answerFive = prompt('Have I ever tried green eggs and ham?').toLowerCase();
+let answerFive = prompt('Do I have a wife & dog?').toLowerCase();
 
-if(answerFive === 'no' || answerFive === 'n'){
+if(answerFive === 'yes' || answerFive === 'y'){
   //console.log('answerFive: ' + answerFive);
-  alert('Correct, I have never tried green eggs and ham');
+  alert('Correct, been with them both for 10 years now');
+  score++;
 }
 
-//let answer = 8
-//let attempts = 4
-//let answer = false
-//for (let i = 0; i< attempts; i++) {
-  //let questionSix = prompt('guess a number');
-  //let numbers = ['5','6','7','8','9','10'](questionSix);
-  //if (numbers === answer) {
-    //alert('correct')
-    //answer = true
-    
+alert('We will now play a guesing game. Pick a number between 1-15, I will prompt you if you guessed to high or to low. You will have four guesses.');
+
+function a6(){
+let remainingTrys = 4;
+let answer = 7;
+
+for (let i = 0; i < remainingTrys; i++){
+  let questionSix = parseInt(prompt('Guess a number between 1-15'));
+  if (questionSix === answer) {
+    alert('That is correct!')
+    score++;
+    break;
+    }
+  else if (questionSix < answer) {
+    alert('Too low');
+    }
+  else if (questionSix > answer) {
+    alert('Too High');
+    }
+  if ( i === remainingTrys -1){
+    alert(`Oops, looks like you ran out of trys. The correct number was ${answer}`);
+    break;
+    }
   }
 }
+a6();
 
-alert('Thank you ' + username + ' for answering those five About Me guessing game questions!');
+function a7() {
+  let countDown = 6;
+  let correctAnswer = false;
+  let countries = ['japan', 'australia', 'netherlands', 'guam'];
+
+  while (countDown && !correctAnswer){
+    let questionSeven = prompt(`Guess the countries I have been to. You have ${countDown} guesses`).toLowerCase();
+    countDown--;
+    for (let i = 0; i < countries.length; i++){
+      if (questionSeven === countries[i]){
+        correctAnswer = true;
+      }
+    }
+  }
+    
+  if (correctAnswer) {
+    alert(`Correct, all the countries I have been to are: ${countries}`);
+    score++;
+  }
+  else {
+    alert(`Looks like you ran out of guesses. The correct answers are: ${countries}`);
+  }
+}
+a7();
+
+alert(`You got ${score} out of 7`);
+
+alert('Thank you ' + username + ' for answering those guessing game questions!');
